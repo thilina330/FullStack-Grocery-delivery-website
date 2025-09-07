@@ -22,12 +22,12 @@ const NavBar = () => {
             {/* Desktop Menu */}
             <div className="hidden sm:flex items-center gap-8">
                 
-                <NavLink to='/'>Home</NavLink>
-                <NavLink to='/products'>All Products</NavLink>
-                <NavLink to='/'>Conatct</NavLink>
+                <NavLink className="text-bg-primary hover:underline" to='/'>Home</NavLink>
+                <NavLink className="text-bg-primary hover:underline" to='/products'>All Products</NavLink>
+                <NavLink className="text-bg-primary hover:underline" to='/'>Contact</NavLink>
 
-                <div className="hidden lg:flex items-center text-sm gap-2 border border-gray-300 px-3 rounded-full">
-                    <input className="py-1.5 w-full bg-transparent outline-none placeholder-gray-500" type="text" placeholder="Search products" />
+                <div className="hidden lg:flex items-center text-sm gap-2 border border-gray-300 px-3 rounded-full ">
+                    <input className="  py-1.5 w-full bg-transparent outline-none placeholder-gray-500" type="text" placeholder="Search products" />
                     <img src={assets.search_icon} alt="search" className='w-4 h-4' />
                 </div>
 
